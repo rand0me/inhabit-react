@@ -11,7 +11,6 @@ function createInHabitRefHook(client: string) {
             script.async = true;
             script.src = "//inhabit-service.cdn.arkadiumhosted.com/Widget/v1/";
             script.dataset.arkClient = client;
-            script.dataset.arkLog = "true";
             el.appendChild(script);
         } else {
             el.innerHTML = `<script src="//inhabit-service.cdn.arkadiumhosted.com/Widget/v1/" async data-ark-client=${client} />`;
