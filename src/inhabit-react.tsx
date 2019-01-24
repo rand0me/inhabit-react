@@ -5,6 +5,7 @@ function createInHabitRefHook(client: string) {
         if (!el || el.childNodes) {
             return;
         }
+
         if (document && document.createElement) {
             const script = document.createElement('script');
             script.async = true;
