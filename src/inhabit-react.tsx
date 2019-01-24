@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function createInHabitRefHook(client: string) {
+function createInHabitRefHook(client: string, url?: string) {
     return (el: HTMLDivElement) => {
         if (!el || el.childNodes) {
             return;
@@ -11,6 +11,9 @@ function createInHabitRefHook(client: string) {
             script.async = true;
             script.src = "//inhabit-service.cdn.arkadiumhosted.com/Widget/v1/";
             script.dataset.arkClient = client;
+            if (url) {
+                script.dataset.arkContextualUrl = url;
+            }
             el.appendChild(script);
         } else {
             el.innerHTML = `<script src="//inhabit-service.cdn.arkadiumhosted.com/Widget/v1/" async data-ark-client=${client} />`;
@@ -20,7 +23,8 @@ function createInHabitRefHook(client: string) {
 
 export interface IInhabitProps {
     client: string;
+    url?: string;
 }
 
 export const InHabit = (props: IInhabitProps) =>
-    <div ref={createInHabitRefHook(props.client)} />
+    <div ref={createInHabitRefHook(props.client, props.url)} />

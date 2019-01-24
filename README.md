@@ -36,3 +36,15 @@ export class MyComponent {
     }
 }
 ```
+
+## FAQ
+
+> Should I add `<script>` tag despite I'm using this component?
+
+No, it will do it for you.
+
+> Where should I add this component?
+
+Typically you want this to be somewhere inside you Article component
+(in case you have a Single-Page Application) to give it a chance to re-render
+when article will be changed (new text appears on a page).
