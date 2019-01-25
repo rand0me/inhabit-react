@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InHabit works 1`] = `<div />`;
+exports[`InHabit works 1`] = `
+<div
+  className="ark--inhabit"
+/>
+`;
+
+exports[`InHabit works in browser 1`] = `
+<div
+  className="ark--inhabit"
+/>
+`;
