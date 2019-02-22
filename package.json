@@ -88,10 +88,11 @@
     "@storybook/addon-storyshots": "^4.1.9",
     "@storybook/addons": "^4.1.9",
     "@storybook/react": "^4.1.9",
-    "@types/jest": "^24.0.0",
+    "@types/jest": "^24.0.6",
     "@types/node": "^11.9.3",
-    "@types/react-dom": "^16.0.11",
-    "@types/react-test-renderer": "^16.0.3",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-test-renderer": "^16.8.1",
     "@types/storybook__react": "^4.0.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.5",
@@ -127,5 +128,7 @@
     "typedoc": "^0.14.2",
     "typescript": "^3.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.8.2"
+  }
 }
