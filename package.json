@@ -84,7 +84,7 @@
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",
     "@storybook/addon-actions": "^5.0.9",
-    "@storybook/addon-links": "^4.1.9",
+    "@storybook/addon-links": "^5.0.9",
     "@storybook/addon-storyshots": "^4.1.9",
     "@storybook/addons": "^4.1.9",
     "@storybook/react": "^4.1.9",
